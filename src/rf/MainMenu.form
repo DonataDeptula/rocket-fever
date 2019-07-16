@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace pref="315" max="32767" attributes="0"/>
+              <Component id="TitleName" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="32767" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane2" alignment="0" min="-2" pref="342" max="-2" attributes="0"/>
+                  <Component id="StartGame" alignment="0" min="-2" pref="162" max="-2" attributes="0"/>
+                  <Component id="ExitToDesktop" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Component id="TitleName" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="201" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="StartGame" min="-2" pref="57" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+              <Component id="jScrollPane2" min="-2" pref="280" max="-2" attributes="0"/>
+              <EmptySpace pref="25" max="32767" attributes="0"/>
+              <Component id="ExitToDesktop" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="TitleName">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Sans" size="48" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Rocket Fever"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="StartGame">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Rozpocznij gr&#x119;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="StartGameActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ExitToDesktop">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Wyj&#x15b;cie z gry"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ExitToDesktopActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="highScoreTable">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="2" rowCount="0">
+                <Column editable="false" title="Data" type="java.lang.String"/>
+                <Column editable="false" title="Wynik" type="java.lang.Integer"/>
+              </Table>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="lineWrap" type="boolean" value="true"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="Gra polega na kierowaniu rakiet za pomoc&#x105; strza&#x142;ek (w lewo, w prawo) na klawiaturze do celu.&#xa;Zadaniem gracza jest dopasowanie wy&#x15b;wietlanego na ekranie s&#x142;owa do odpowiedniej cz&#x119;&#x15b;ci mowy - rzeczownika, przymiotnika lub czasownika. Za ka&#x17c;de poprawne dopasowanie gracz otrzymuje punkt.&#xa;Celem gry jest uzyskanie jak najwi&#x119;kszej liczby punkt&#xf3;w w sko&#x144;czonym czasie.&#xa;Po zako&#x144;czeniu przelotu gracz steruje now&#x105; rakiet&#x105; i musi dopasowa&#x107; nowe s&#x142;owo, a poprzednio sterowana porusza si&#x119; po planszy po poprzednio wyznaczonym torze.&#xa;Rakieta, kt&#xf3;r&#x105; w danej rundzie kieruje gracz jest koloru czerwonego, a te z poprzednich rund - koloru bia&#x142;ego.&#xa;Po uderzeniu w kt&#xf3;r&#x105;&#x15b; z przeszk&#xf3;d, poprzedni&#x105; rakiet&#x119; lub w kraw&#x119;d&#x17a; okna rakieta gracza zmniejsza pr&#x119;dko&#x15b;&#x107; o po&#x142;owe. Rosn&#x105;ca liczba rakiet na planszy stopniowo podnosi poziom trudno&#x15b;ci rozgrywki.&#xa;W dowolnej chwili gracz mo&#x17c;e rozpocz&#x105;&#x107; gr&#x119; od nowa lub powt&#xf3;rzy&#x107; aktualn&#x105; runde (czas rozrywki nie jest odnawiany).&#xa;Czas przeznaczony na gr&#x119; to 60 sekund, ale na planszy znajduj&#x105; si&#x119; 3 bonusy czasowe, kt&#xf3;re dodaj&#x105; po 10 sekund ka&#x17c;dy.&#xa;&#xa;Trudno&#x15b;ci&#x105;&#xa0;gry s&#x105;: klasyfikowanie s&#x142;&#xf3;w wed&#x142;ug ich cz&#x119;&#x15b;ci mowy, odpowiednie planowanie trasy swojej rakiety i unikanie w&#x142;asnych."/>
+            <Property name="wrapStyleWord" type="boolean" value="true"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Autor: Donata Deptu&#x142;a"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
